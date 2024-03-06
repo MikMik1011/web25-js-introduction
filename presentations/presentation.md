@@ -93,22 +93,40 @@ nasledio ga je `let`
 # Tipovi varijabla
 
 - JS nije statično tipiziran
-- Jezik ne brani promenu tipa tokom runtimea
+- Runtime ne brani promenu tipa tokom izvršavanja
 **(ali je to loša ideja)**
 - `typeof` operator vraća string sa tipom varijable
 <br /><br />
 ---
 ![bg](images/image3.png)
 
-* <h1> Bezvredni tipovi </h1>
+* <h1> Vrednostni tipovi: </h1>
+
+  * Number
+  * BigInt
+  * String
+  * Boolean
+  * Object
+  * Function
+
+---
+![bg](images/image1.png)
+
+* <h2> Tipovi koji ne sadrže vrednost: </h2>
 
   * undefined
   * null
   * NaN
-* neke interesantne situacije:
+
+---
+![bg](images/image4.png)
+
+### Ponekad tipovi maaaalo nemaju smisla:
   * `typeof typeof 123 == "string"`
   * `typeof null == "object"` 
   * `typeof NaN == "number"`
+  * `typeof class Foo {} == "function"`
+  * `typeof [1,2,3] == "object"`
 
 ---
 ![bg](images/image6.png)
