@@ -35,13 +35,13 @@ style: |
 * Skriptni jezik, interpreter evaluira liniju po liniju
 * Nema potrebe za main funkcijom
 * Osnovna sintaksa bliska C-u ili Javi (zagrade, ; itd.)
-* Znak ; nije obavezan ako nije naveden striktni mod na početku fajla
+* Znak `;` nije obavezan ako nije naveden striktni mod na početku fajla
 
 `
 "use strict"
 `
 
-<br /><br /><br /> 
+<br /><br />
 <!-- br-ovi samo za potrebe da se digne tekst -->
 
 ---
@@ -75,10 +75,43 @@ console.log("Hello World");
 </div>
 
 ---
-<!-- TODO -->
+![bg](images/image4.png)
 
+# Varijable
+
+- U JS-u varijable se definišu pomoću jednog od 3 keyworda:
+  - `let`
+  - `const`
+  - `var`
+
+- `const` koristimo za konstante
+- `var` se u poslednje vreme ne koristi,
+nasledio ga je `let`
+---
+![bg](images/image5.png)
+
+# Tipovi varijabla
+
+- JS nije statično tipiziran
+- Jezik ne brani promenu tipa tokom runtimea
+**(ali je to loša ideja)**
+- `typeof` operator vraća string sa tipom varijable
+<br /><br />
+---
+![bg](images/image3.png)
+
+* <h1> Bezvredni tipovi </h1>
+
+  * undefined
+  * null
+  * NaN
+* neke interesantne situacije:
+  * `typeof typeof 123 == "string"`
+  * `typeof null == "object"` 
+  * `typeof NaN == "number"`
+
+---
 ![bg](images/image6.png)
-
 
 # Pitanja?
 
