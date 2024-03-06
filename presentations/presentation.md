@@ -129,6 +129,26 @@ nasledio ga je `let`
   * `typeof [1,2,3] == "object"`
 
 ---
+![bg](images/image2.png)
+# Operatori za poređenje
+
+- Postoje **2** načina za poređenje varijabli:
+  - `==` i `!=` ➜ porede samo vrednosti, ali ne i tipove
+  - `===` i `!==` ➜ porede i vrednosti i tipove **(preporučljivo)**
+
+---
+![bg](images/image4.png)
+
+# Aritmetički operatori
+
+- `+`, `-`, `*`, `/`, `%`, `**`
+- Mogu se i assignovati: `+=`, `-=`, `*=`, `/=`, `%=`, `**=`
+- Takođe, postoji i increment i decrement: `i++`, `i--`
+- `+` i `+=` se mogu koristiti i za spajanje stringova
+- Ostali operatori automatski castuju operande u Number
+  - Koji je output `2 + '2' - 2`?
+
+---
 ![bg](images/image6.png)
 
 # Pitanja?
