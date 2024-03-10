@@ -103,7 +103,7 @@ nasledio ga je `let`
 ---
 ![bg](images/image3.png)
 
-* <h1> Vrednostni tipovi: </h1>
+* <h1> Vrednosni tipovi: </h1>
 
   * Number
   * BigInt
@@ -131,39 +131,6 @@ nasledio ga je `let`
   * `typeof class Foo {} == "function"`
   * `typeof [1,2,3] == "object"`
 
----
-![bg](images/image2.png)
-# Operatori za poređenje
-
-- Postoje **2** načina za poređenje varijabli:
-  - `==` i `!=` ➜ porede samo vrednosti, ali ne i tipove
-  - `===` i `!==` ➜ porede i vrednosti i tipove **(preporučljivo)**
-
-<!-- NaN === NaN; // -> false -->
-
----
-![bg](images/image4.png)
-
-# Aritmetički operatori
-
-- `+`, `-`, `*`, `/`, `%`, `**`
-- Mogu se i assignovati: `+=`, `-=`, `*=`, `/=`, `%=`, `**=`
-- Takođe, postoji i increment i decrement: `i++`, `i--`
-- `+` i `+=` se mogu koristiti i za spajanje stringova
-- Ostali operatori automatski castuju operande u Number
-  - Koji je output `2 + '2' - 2`?
-
-<!-- "b" + "a" + +"a" + "a"; // -> 'baNaNa' -->
-
----
-![bg](images/image6.png)
-# Logički operatori
-
-- `&&` (AND) ➜ vraća `true` ako su obe vrednosti `true`
-- `||` (OR) ➜ vraća `true` ako je barem jedna vrednost `true`
-- `!` (NOT) ➜ negira vrednost, tj vraća kontra vrednost
-- JS radi lazy evaluaciju
-- `??` (Nullish) ➜ vraća drugu vrednost ako je prva `null` ili `undefined`
 ---
 ![bg](images/image7.png)
 
@@ -203,6 +170,90 @@ const greet = (name) => {
 
 </div>
 
+---
+![bg](images/image6.png)
+# Objekti
+
+- Koriste se za grupisanje više različitih varijabli u jednu
+
+```javascript
+let osoba = {
+    ime: 'Pera Perić',
+    godine: 25,
+    grad: 'Beograd'
+};
+```
+- Pristupamo pomoću:
+<div class="columns2">
+  <div> 
+  Notacije tačkom
+
+  `osoba.ime`
+  </div>
+  <div> 
+  Notacije zagradom
+
+  `osoba["ime"]`
+  </div>
+</div>
+
+---
+![bg](images/image2.png)
+# Klase
+
+- "Kalup" za pravljenje objekata
+- Konstruktor ➜ funkcija koja inicijalizuje objekat
+- Od ECMAScript 2022 postoje privatna polja
+  - Privatna polja počinju sa `#`
+  - Za pristup možemo koristiti `get` i `set` operatore
+- Klase se instanciraju sa `new` operatorom
+
+<br /><br /><br />
+
+---
+
+# Nizovi
+![bg](images/image5.png)
+
+- Koriste se kao skup istih varijabli
+- Ne funkcionišu ispod haube kao u drugim jezicima
+  - Posebna, indeksirana vrsta objekta
+  - Više su nalik listama
+<br /><br /><br />
+---
+
+![bg](images/image2.png)
+# Operatori za poređenje
+
+- Postoje **2** načina za poređenje varijabli:
+  - `==` i `!=` ➜ porede samo vrednosti, ali ne i tipove
+  - `===` i `!==` ➜ porede i vrednosti i tipove **(preporučljivo)**
+
+<!-- NaN === NaN; // -> false -->
+
+---
+![bg](images/image4.png)
+
+# Aritmetički operatori
+
+- `+`, `-`, `*`, `/`, `%`, `**`
+- Mogu se i assignovati: `+=`, `-=`, `*=`, `/=`, `%=`, `**=`
+- Takođe, postoji i increment i decrement: `i++`, `i--`
+- `+` i `+=` se mogu koristiti i za spajanje stringova
+- Ostali operatori automatski castuju operande u Number
+  - Koji je output `2 + '2' - '2'`?
+
+<!-- "b" + "a" + +"a" + "a"; // -> 'baNaNa' -->
+
+---
+![bg](images/image6.png)
+# Logički operatori
+
+- `&&` (AND) ➜ vraća `true` ako su obe vrednosti `true`
+- `||` (OR) ➜ vraća `true` ako je barem jedna vrednost `true`
+- `!` (NOT) ➜ negira vrednost, tj vraća kontra vrednost
+- JS radi lazy evaluaciju
+- `??` (Nullish) ➜ vraća drugu vrednost ako je prva `null` ili `undefined`
 ---
 # Kondicionali
 ![bg](images/image3.png)
@@ -323,6 +374,23 @@ for(vrednost of iterable) {
 - `for..in` vraća index ili ključ elementa
 - `for..of` vraća kopiju vrednosti elementa
   - promene vrednosti elementa **NE** utiču na objekat
+
+---
+
+# map, filter, reduce
+![bg](images/image4.png)
+- Metodi nizova
+- Prolaze kroz niz, izvršavaju arrow funkciju i vraćaju neku vrednost
+- `map` ➜ vraća modifikovanu **kopiju** niza na osnovu funkcije
+- `filter` ➜ vraća filtriranu **kopiju** niza na osnovu uslova
+- `reduce` ➜ vraća akumuliranu vrednost
+
+<!--
+  Ovde ubaciti bonus stvari koje mogu uraditi ako stignem:
+    - prototipovi
+    - JSON
+
+-->
 
 ---
 ![bg](images/image6.png)
